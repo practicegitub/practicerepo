@@ -11,8 +11,8 @@ pipeline{
            sh 'ls -l'
            dir ('munich') {
                 sh"pwd"
-                sh"touch file1"
-                sh "echo version >> file1"
+                sh"touch file"
+                sh "echo version >> file"
            }
       }
   }
