@@ -4,7 +4,7 @@ pipeline{
       stage('build'){
           step{
               sh "echo hema"
-              }
-        }
+          }
       }
-    }
+  }
+}
