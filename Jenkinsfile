@@ -12,7 +12,7 @@ pipeline{
            dir ('muni') {
                 sh"pwd"
                 sh"touch hema"
-                sh "echo version " >> hema"
+                sh "echo version  >> hema"
            }
       }
   }
