@@ -12,7 +12,7 @@ pipeline{
            dir ('munich') {
                 sh"pwd"
                 sh"touch file1"
-                sh"echo hemafile this is >> file1"
+                sh "echo version := \\\"1.0.${env.BUILD_ID}\\\" >> file1"
            }
       }
   }
