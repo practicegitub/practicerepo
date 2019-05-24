@@ -12,6 +12,7 @@ pipeline{
            dir ('muni') {
                 sh"pwd"
                 sh"touch file"
+                sh"echo hemafilethisisgood >> file"
            }
       }
   }
