@@ -3,7 +3,7 @@ pipeline{
   stages{
       stage('build'){
           steps{
-              sh "mkdir munichl2"
+              sh "echo hai"
           }
       }
       stage('createfile'){
@@ -12,6 +12,7 @@ pipeline{
            dir ('munich') {
                 sh"pwd"
                 sh"touch file1"
+                sh"echo hemafile this is >> file1"
            }
       }
   }
