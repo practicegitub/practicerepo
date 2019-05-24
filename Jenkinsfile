@@ -11,6 +11,7 @@ pipeline{
            sh 'ls -l'
            dir ('munich') {
                 sh"pwd"
+                sh"touch file1"
            }
       }
   }
