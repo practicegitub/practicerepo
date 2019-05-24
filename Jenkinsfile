@@ -8,9 +8,11 @@ pipeline{
       }
       stage('createfile'){
           steps{
-              sh "cd muni"
-              sh "touch muni"
+           sh 'ls -l'
+           dir ('foo') {
+        writeFile file:'dummy', text:''
           }
       }
   }
+}
 }
