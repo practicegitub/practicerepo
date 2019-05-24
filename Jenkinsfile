@@ -9,7 +9,7 @@ pipeline{
       stage('createfile'){
           steps{
            sh 'ls -l'
-           dir ('munich') {
+           dir ('muni') {
                 sh"pwd"
                 sh"touch file"
                 sh "echo version >> file"
