@@ -10,7 +10,7 @@ pipeline{
           steps{
            sh 'ls -l'
            dir ('foo') {
-        writeFile file:'dummy', text:''
+                 writeFile file:'dummy', text:''
           }
       }
   }
