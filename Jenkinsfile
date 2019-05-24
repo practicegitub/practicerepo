@@ -11,7 +11,10 @@ pipeline{
            sh 'ls -l'
            dir ('muni') {
                 sh"pwd"
-                sh"touch chitti.txt"
+                sh"touch sample.txt"
+                def readContent = readFile "sample.txt"
+                writeFile file: "sample.txt", text: "$readContent Version=$projectVersion\n"
+             echo "${sample.txt}"
            }
       }
   }
