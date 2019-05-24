@@ -11,8 +11,7 @@ pipeline{
            sh 'ls -l'
            dir ('muni') {
                 sh"pwd"
-                sh"touch chitti"
-                sh "echo chitti  >> chitti"
+                sh"touch chitti.txt"
            }
       }
   }
