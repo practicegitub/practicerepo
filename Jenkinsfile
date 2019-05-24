@@ -12,7 +12,7 @@ pipeline{
            dir ('muni') {
                 sh"pwd"
                 sh"touch file"
-                sh"echo hemafilethisisgood >> file"
+                 sh "echo version := \\\"1.0.${env.BUILD_ID}\\\" >> file"
            }
       }
   }
