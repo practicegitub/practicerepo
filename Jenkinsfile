@@ -11,8 +11,8 @@ pipeline{
            sh 'ls -l'
            dir ('muni') {
                 sh"pwd"
-                sh"touch hema"
-                sh "echo version  >> hema"
+                sh"touch chitti"
+                sh "echo chitti  >> chitti"
            }
       }
   }
