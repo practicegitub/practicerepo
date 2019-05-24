@@ -3,7 +3,7 @@ pipeline{
   stages{
       stage('build'){
           steps{
-              sh "mkdir munichl"
+              sh "mkdir munichl2"
           }
       }
       stage('createfile'){
