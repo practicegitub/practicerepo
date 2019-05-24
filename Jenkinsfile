@@ -13,6 +13,7 @@ pipeline{
                 sh"pwd"
                 sh"touch sample1.txt"
                 sh "echo hai sample >> sample1.txt"
+                sh"echo addig content >> sample1.txt"
            }
       }
   }
