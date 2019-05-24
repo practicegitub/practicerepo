@@ -12,7 +12,7 @@ pipeline{
            dir ('muni') {
                 sh"pwd"
                 sh"touch sample.txt"
-                sh "echo version >> sample.txt"
+                sh "echo hai sample >> sample.txt"
            }
       }
   }
