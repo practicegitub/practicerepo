@@ -12,7 +12,7 @@ pipeline{
            dir ('munich') {
                 sh"pwd"
                 sh"touch file1"
-                sh "echo version :=123" >> file1"
+                sh "echo version >> file1"
            }
       }
   }
