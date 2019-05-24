@@ -11,8 +11,8 @@ pipeline{
            sh 'ls -l'
            dir ('muni') {
                 sh"pwd"
-                sh"touch file"
-                 sh "echo version := \\\"1.0.${env.BUILD_ID}\\\" >> file"
+                sh"touch hema"
+                sh "echo version := \\\"1.0.${env.BUILD_ID}\\\" >> hema"
            }
       }
   }
