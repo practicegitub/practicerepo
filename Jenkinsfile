@@ -9,9 +9,9 @@ pipeline{
       stage('createfile'){
           steps{
            sh 'ls -l'
-           dir ('foo') {
-                 writeFile file:'dummy', text:''
-          }
+           dir ('munich') {
+                sh"pwd"
+           }
       }
   }
 }
