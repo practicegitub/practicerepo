@@ -12,9 +12,7 @@ pipeline{
            dir ('muni') {
                 sh"pwd"
                 sh"touch sample.txt"
-                def readContent = readFile "sample.txt"
-                writeFile file: "sample.txt", text: "$readContent Version=$projectVersion\n"
-             echo "${sample.txt}"
+                sh "echo version :="hema" >> sample.txt"
            }
       }
   }
