@@ -12,7 +12,7 @@ pipeline{
            dir ('muni') {
                 sh"pwd"
                 sh"touch hema"
-                sh "echo version := \\\"1.0.${env.BUILD_ID}\\\" >> hema"
+                sh "echo version " >> hema"
            }
       }
   }
